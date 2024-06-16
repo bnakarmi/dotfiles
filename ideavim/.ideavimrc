@@ -1,0 +1,61 @@
+set number
+set relativenumber
+
+set ignorecase
+set smartcase
+
+set incsearch
+set nohlsearch
+
+set nowrap
+set scrolloff=8
+set colorcolumn=80
+
+inoremap kj <Esc>
+
+let mapleader = " "
+
+nnoremap <A-j> :m .+1<CR>==
+nnoremap <A-k> :m .-2<CR>==
+inoremap <A-j> <Esc>:m .+1<CR>==gi
+inoremap <A-k> <Esc>:m .-2<CR>==gi
+vnoremap <A-j> :m '>+1<CR>gv=gv
+vnoremap <A-k> :m '<-2<CR>gv=gv
+
+vnoremap > >gv
+vnoremap < <gv
+vnoremap <leader>y "+y
+map <leader>p "+P
+
+nnoremap <leader>lf :action ReformatCode<CR>
+nnoremap <leader>lh :action QuickJavaDoc<CR>
+nnoremap <leader>lo :action OptimizeImports<CR>
+nnoremap <leader>ld :action GotoDeclaration<CR>
+nnoremap <leader>li :action GotoImplementation<CR>
+nnoremap <leader>lt :action GotoTypeDeclaration<CR>
+nnoremap <leader>lR :action FindUsages<CR>
+nnoremap <leader>ls :action TogglePopupHints<CR>
+nnoremap <leader>lr :action RenameElement<CR>
+nnoremap <leader>lc :action Refactorings.QuickListPopupAction<CR>
+nnoremap [d :action GotoPreviousError<CR>
+nnoremap ]d :action GotoNextError<CR>
+nnoremap <c-w>m :action MoveEditorToOppositeTabGroup<CR>
+map <leader>sf <Action>(GotoFile)
+map <leader>sg <Action>(FindInPath)
+map <leader>ds :action Debug<CR>
+map <leader>dS :action DebugClass<CR>
+
+map <leader>di :action StepInto<CR>
+map <leader>dI :action StepOut<CR>
+map <leader>do :action StepOver<CR>
+
+map <leader>dc :action Resume<CR>
+map <leader>dx :action Stop<CR>
+map <leader>dr :action RunToCursor<CR>
+
+map <leader>da :action Debugger.AddToWatch<CR>
+map <leader>de :action EvaluateExpression<CR>
+
+map <leader>db :action ToggleLineBreakpoint<CR>
+map <leader>dB :action EditBreakpoint<CR>
+map <leader>dV :action ViewBreakpoints<CR>

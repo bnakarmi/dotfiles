@@ -1,0 +1,256 @@
+{
+	"workbench.colorCustomizations": {
+		"terminal.background": "#090300",
+		"terminal.foreground": "#A5A2A2",
+		"terminalCursor.background": "#A5A2A2",
+		"terminalCursor.foreground": "#A5A2A2",
+		"terminal.ansiBlack": "#090300",
+		"terminal.ansiBlue": "#01A0E4",
+		"terminal.ansiBrightBlack": "#5C5855",
+		"terminal.ansiBrightBlue": "#01A0E4",
+		"terminal.ansiBrightCyan": "#B5E4F4",
+		"terminal.ansiBrightGreen": "#01A252",
+		"terminal.ansiBrightMagenta": "#A16A94",
+		"terminal.ansiBrightRed": "#DB2D20",
+		"terminal.ansiBrightWhite": "#F7F7F7",
+		"terminal.ansiBrightYellow": "#FDED02",
+		"terminal.ansiCyan": "#B5E4F4",
+		"terminal.ansiGreen": "#01A252",
+		"terminal.ansiMagenta": "#A16A94",
+		"terminal.ansiRed": "#DB2D20",
+		"terminal.ansiWhite": "#A5A2A2",
+		"terminal.ansiYellow": "#FDED02"
+	},
+	"editor.fontFamily": "Monaspace Neon",
+	"editor.fontLigatures": "'ss01', 'ss02', 'ss03', 'ss04', 'ss05', 'ss06', 'zero', 'onum'",
+	"editor.fontWeight": "400",
+	"editor.formatOnSave": false,
+	"editor.wordWrap": "on",
+	"prettier.printWidth": 100,
+	"prettier.singleQuote": true,
+	"prettier.tabWidth": 4,
+	"prettier.trailingComma": "all",
+	"prettier.useTabs": true,
+	"[html]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode",
+		"editor.formatOnSave": true
+	},
+	"[css]": {
+		"editor.formatOnSave": true,
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"[typescript]": {
+		"editor.formatOnSave": true,
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"[javascript]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode",
+		"editor.formatOnSave": true
+	},
+	"[json]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode",
+		"editor.formatOnSave": true
+	},
+	"[jsonc]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode",
+		"editor.formatOnSave": true
+	},
+	"[typescriptreact]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"[scss]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode",
+		"editor.formatOnSave": true
+	},
+	"javascript.updateImportsOnFileMove.enabled": "always",
+	"typescript.updateImportsOnFileMove.enabled": "always",
+	"typescript.referencesCodeLens.enabled": true,
+	"editor.suggestSelection": "first",
+	"files.exclude": {
+		"**/.classpath": true,
+		"**/.project": true,
+		"**/.settings": true,
+		"**/.factorypath": true
+	},
+	"workbench.editorAssociations": {
+		"*.ipynb": "jupyter-notebook"
+	},
+	"terminal.integrated.fontFamily": "CaskaydiaCove Nerd Font Mono",
+	"notebook.cellToolbarLocation": {
+		"default": "right",
+		"jupyter-notebook": "left"
+	},
+	"debug.console.fontSize": 17,
+	"terminal.integrated.fontSize": 17,
+	"editor.inlineSuggest.enabled": true,
+	"terminal.integrated.defaultProfile.windows": "PowerShell",
+	"editor.fontSize": 17,
+	"vim.easymotion": true,
+	"vim.incsearch": true,
+	"vim.useSystemClipboard": true,
+	"vim.useCtrlKeys": true,
+	"vim.hlsearch": true,
+	"vim.easymotionMarkerBackgroundColor": "#020202",
+	"vim.insertModeKeyBindings": [
+		{
+			"before": ["k", "j"],
+			"after": ["<Esc>"]
+		}
+	],
+	"vim.normalModeKeyBindingsNonRecursive": [
+		{
+			"before": ["<leader>", "w", "m"],
+			"commands": ["workbench.action.toggleEditorWidths"]
+		},
+		{
+			"before": ["<leader>", "e", "o"],
+			"commands": ["workbench.view.explorer"]
+		},
+		{
+			"before": ["<leader>", "e", "c"],
+			"commands": ["workbench.action.closeSidebar"]
+		},
+		{
+			"before": ["<leader>", "l", "f"],
+			"commands": ["editor.action.formatDocument"]
+		},
+		{
+			"before": ["<leader>", "l", "o"],
+			"commands": ["editor.action.organizeImports"]
+		},
+		{
+			"before": ["leader", "l", "h"],
+			"commands": ["editor.action.showHover"]
+		},
+		{
+			"before": ["leader", "l", "d"],
+			"commands": ["editor.action.revealDefinition"]
+		},
+		{
+			"before": ["leader", "l", "D"],
+			"commands": ["editor.action.revealDeclaration"]
+		},
+		{
+			"before": ["leader", "l", "i"],
+			"commands": ["editor.action.goToImplementation"]
+		},
+		{
+			"before": ["leader", "l", "t"],
+			"commands": ["editor.action.goToTypeDefinition"]
+		},
+		{
+			"before": ["leader", "l", "R"],
+			"commands": ["editor.action.goToReferences"]
+		},
+		{
+			"before": ["leader", "l", "s"],
+			"commands": ["editor.action.triggerParameterHints"]
+		},
+		{
+			"before": ["leader", "l", "r"],
+			"commands": ["editor.action.rename"]
+		},
+		{
+			"before": ["leader", "l", "c"],
+			"commands": ["editor.action.quickFix"]
+		},
+		{
+			"before": ["leader", "l", "e"],
+			"commands": ["editor.action.showHover"]
+		},
+		{
+			"before": ["leader", "d", "t"],
+			"commands": ["editor.debug.action.toggleBreakpoint"]
+		},
+		{
+			"before": ["leader", "d", "c"],
+			"commands": ["workbench.action.debug.continue"]
+		},
+		{
+			"before": ["leader", "d", "i"],
+			"commands": ["workbench.action.debug.stepInto"]
+		},
+		{
+			"before": ["leader", "d", "o"],
+			"commands": ["workbench.action.debug.stepOver"]
+		},
+		{
+			"before": ["leader", "d", "O"],
+			"commands": ["workbench.action.debug.stepOut"]
+		},
+		{
+			"before": ["leader", "d", "s"],
+			"commands": ["workbench.action.debug.start"]
+		},
+		{
+			"before": ["leader", "d", "S"],
+			"commands": ["workbench.action.debug.stop"]
+		},
+		{
+			"before": ["leader", "d", "r"],
+			"commands": ["workbench.action.debug.restart"]
+		}
+	],
+	"vim.visualModeKeyBindings": [
+		{
+			"before": [">"],
+			"after": [">", "g", "v"]
+		},
+		{
+			"before": ["<"],
+			"after": ["<", "g", "v"]
+		}
+	],
+	"vim.leader": "<space>",
+	"vim.handleKeys": {
+		// Normal select all
+		"<C-a>": true, // vim increment number
+		// Normal find
+		"<C-f>": true, // vim go page forward
+		// Normal copy
+		"<C-c>": true, // vim exit insert mode
+		// Normal cut
+		"<C-x>": true, // vim decrement number
+		// Normal paste
+		"<C-v>": true, // vim visual block mode
+		// Normal undo
+		"<C-z>": false, // vim exit and leave in background
+		// Normal redo
+		"<C-y>": true // vim go up one line
+	},
+	"terminal.integrated.profiles.windows": {
+		"PowerShell": {
+			"source": "PowerShell",
+			"icon": "terminal-powershell"
+		},
+		"Command Prompt": {
+			"path": ["${env:windir}\\Sysnative\\cmd.exe", "${env:windir}\\System32\\cmd.exe"],
+			"args": [],
+			"icon": "terminal-cmd"
+		},
+		"Git Bash": {
+			"source": "Git Bash"
+		},
+		"Windows PowerShell": {
+			"path": "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe"
+		}
+	},
+	"js/ts.implicitProjectConfig.experimentalDecorators": true,
+	"editor.stickyScroll.enabled": true,
+	"editor.codeLensFontFamily": "Cascadia Code",
+	"editor.inlayHints.fontFamily": "Cascadia Code",
+	"debug.console.fontFamily": "Cascadia Code",
+	"editor.lineNumbers": "relative",
+	"editor.stickyScroll.maxLineCount": 10,
+	"editor.autoClosingQuotes": "never",
+	"editor.autoClosingBrackets": "never",
+	"html.autoClosingTags": false,
+	"html.autoCreateQuotes": false,
+	"editor.autoClosingOvertype": "never",
+	"editor.autoClosingDelete": "never",
+	"typescript.autoClosingTags": false,
+	"javascript.autoClosingTags": false,
+	"workbench.colorTheme": "Simple Black Theme",
+	"window.zoomLevel": -1
+}
+

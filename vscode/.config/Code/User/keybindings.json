@@ -1,0 +1,109 @@
+// Place your key bindings in this file to override the defaults
+[
+	{
+		"key": "ctrl+alt+b",
+		"command": "workbench.action.toggleAuxiliaryBar"
+	},
+	{
+		"key": "ctrl+alt+p",
+		"command": "workbench.action.closePanel"
+	},
+	{
+		"key": "ctrl+alt+\\",
+		"command": "workbench.action.toggleMaximizedPanel"
+	},
+	{
+		"key": "alt+k",
+		"command": "editor.action.moveLinesUpAction",
+		"when": "editorTextFocus && !editorReadonly"
+	},
+	{
+		"key": "alt+up",
+		"command": "-editor.action.moveLinesUpAction",
+		"when": "editorTextFocus && !editorReadonly"
+	},
+	{
+		"key": "alt+j",
+		"command": "editor.action.moveLinesDownAction",
+		"when": "editorTextFocus && !editorReadonly"
+	},
+	{
+		"key": "alt+down",
+		"command": "-editor.action.moveLinesDownAction",
+		"when": "editorTextFocus && !editorReadonly"
+	},
+	{
+		"key": "ctrl+w k",
+		"command": "workbench.action.focusAboveGroup"
+	},
+	{
+		"key": "ctrl+k ctrl+up",
+		"command": "-workbench.action.focusAboveGroup"
+	},
+	{
+		"key": "ctrl+w j",
+		"command": "workbench.action.focusBelowGroup"
+	},
+	{
+		"key": "ctrl+k ctrl+down",
+		"command": "-workbench.action.focusBelowGroup"
+	},
+	{
+		"key": "ctrl+w h",
+		"command": "workbench.action.focusLeftGroup"
+	},
+	{
+		"key": "ctrl+k ctrl+left",
+		"command": "-workbench.action.focusLeftGroup"
+	},
+	{
+		"key": "ctrl+w l",
+		"command": "workbench.action.focusRightGroup"
+	},
+	{
+		"key": "ctrl+k ctrl+right",
+		"command": "-workbench.action.focusRightGroup"
+	},
+	{
+		"key": "ctrl+w shift+h",
+		"command": "workbench.action.moveEditorToPreviousGroup"
+	},
+	{
+		"key": "ctrl+alt+left",
+		"command": "-workbench.action.moveEditorToPreviousGroup"
+	},
+	{
+		"key": "ctrl+w shift+j",
+		"command": "workbench.action.moveEditorToBelowGroup"
+	},
+	{
+		"key": "ctrl+w shift+k",
+		"command": "workbench.action.moveEditorToAboveGroup"
+	},
+	{
+		"key": "ctrl+w shift+l",
+		"command": "workbench.action.moveEditorToNextGroup"
+	},
+	{
+		"key": "ctrl+alt+right",
+		"command": "-workbench.action.moveEditorToNextGroup"
+	},
+	{
+		"key": "] d",
+		"command": "editor.action.marker.next",
+		"when": "editorTextFocus && vim.active && vim.mode == 'Normal' && vim.mode != 'SearchInProgressMode'"
+	},
+	{
+		"key": "[ d",
+		"command": "editor.action.marker.prev",
+		"when": "editorTextFocus && vim.active && vim.mode == 'Normal' && vim.mode != 'SearchInProgressMode'"
+	},
+	{
+		"key": "ctrl+shift+n",
+		"command": "workbench.action.quickOpen"
+	},
+	{
+		"key": "ctrl+p",
+		"command": "-workbench.action.quickOpen"
+	}
+]
