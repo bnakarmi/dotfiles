@@ -41,6 +41,7 @@ let g:netrw_banner = 0
 " Leader key
 let mapleader = " "
 
+autocmd FileType netrw setl bufhidden=delete
 autocmd vimenter * ++nested colorscheme gruvbox
 
 filetype on
