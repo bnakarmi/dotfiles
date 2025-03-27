@@ -120,13 +120,8 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
-. "$HOME/.cargo/env"
 
-# bun
-export BUN_INSTALL="$HOME/.bun"
-export GOPATH=$HOME/go/bin
-export JAVA_HOME="/home/linuxbrew/.linuxbrew/opt/openjdk@21/bin"
-export PATH=$PATH:$BUN_INSTALL/bin:$GOPATH:$JAVA_HOME
-
-# Load Angular CLI autocompletion.
-source <(ng completion script)
+export GO_PATH=$HOME/go/bin
+export JAVA_HOME="/usr/lib/jvm/java-21-openjdk-amd64"
+export NVIM_PATH="/opt/nvim-linux-x86_64/bin"
+export PATH=$PATH:$GO_PATH:$JAVA_HOME:$NVIM_PATH
