@@ -125,3 +125,5 @@ export GO_PATH=$HOME/go/bin
 export JAVA_HOME="/usr/lib/jvm/java-21-openjdk-amd64"
 export NVIM_PATH="/opt/nvim-linux-x86_64/bin"
 export PATH=$PATH:$GO_PATH:$JAVA_HOME:$NVIM_PATH
+
+eval "$(zoxide init --cmd cd bash)"
