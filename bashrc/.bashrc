@@ -99,9 +99,11 @@ alias la='ls -A'
 alias l='ls -CF'
 alias nv='nvim'
 alias python='python3'
-alias ffn='selected_file=$(rg --files | fzf --preview "bat --color=always {}") && [ -n "$selected_file" ] && tmux new-session "nvim $selected_file"'
-alias ff='rg --files | fzf --preview "bat --color=always {}" | xargs -r nvim'
-alias ffnm='rg --files --glob "!**/node_modules/**" | fzf --preview "bat --color=always {}" | xargs -r nvim'
+alias sd='cd "$(fd --type d --exclude node_modules | fzf)"'
+alias sdn='cd "$(fd --type d --exclude node_modules | fzf)" && nvim'
+alias sf='rg --files | fzf --preview "bat --color=always {}" | xargs -r nvim'
+alias sfn='rg --files --glob "!**/node_modules/**" | fzf --preview "bat --color=always {}" | xargs -r nvim'
+alias sft='selected_file=$(rg --files | fzf --preview "bat --color=always {}") && [ -n "$selected_file" ] && tmux new-session "nvim $selected_file"'
 
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
@@ -130,6 +132,7 @@ fi
 export GO_PATH="/usr/local/go/bin"
 export JAVA_HOME="/usr/lib/jvm/java-21-openjdk-amd64"
 export NVIM_PATH="/opt/nvim-linux-x86_64/bin"
-export PATH=$PATH:$GO_PATH:$JAVA_HOME:$NVIM_PATH
+export FD_PATH="$HOME/.local/bin"
+export PATH=$PATH:$GO_PATH:$JAVA_HOME:$NVIM_PATH:$FD_PATH
 
 eval "$(zoxide init --cmd cd bash)"
