@@ -136,3 +136,5 @@ export FD_PATH="$HOME/.local/bin"
 export PATH=$PATH:$GO_PATH:$JAVA_HOME:$NVIM_PATH:$FD_PATH
 
 eval "$(zoxide init --cmd cd bash)"
+
+set -o vi
