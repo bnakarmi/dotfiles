@@ -40,22 +40,28 @@ nnoremap <leader>lc :action Refactorings.QuickListPopupAction<CR>
 nnoremap [d :action GotoPreviousError<CR>
 nnoremap ]d :action GotoNextError<CR>
 nnoremap <c-w>m :action MoveEditorToOppositeTabGroup<CR>
+
 map <leader>sf <Action>(GotoFile)
 map <leader>sg <Action>(FindInPath)
+map <leader>sls <Action>(FileStructurePopup)
+
 map <leader>ds :action Debug<CR>
 map <leader>dS :action DebugClass<CR>
-
 map <leader>di :action StepInto<CR>
 map <leader>dI :action StepOut<CR>
 map <leader>do :action StepOver<CR>
-
 map <leader>dc :action Resume<CR>
 map <leader>dx :action Stop<CR>
 map <leader>dr :action RunToCursor<CR>
-
 map <leader>da :action Debugger.AddToWatch<CR>
 map <leader>de :action EvaluateExpression<CR>
 
 map <leader>db :action ToggleLineBreakpoint<CR>
 map <leader>dB :action EditBreakpoint<CR>
 map <leader>dV :action ViewBreakpoints<CR>
+
+nnoremap <C-w><S-h> :action MoveTabLeft<CR>
+nnoremap <C-w><S-j> :action MoveTabDown<CR>
+nnoremap <C-w><S-k> :action MoveTabUp<CR>
+nnoremap <C-w><S-l> :action MoveTabRight<CR>
+
