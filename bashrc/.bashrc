@@ -138,3 +138,7 @@ export PATH=$PATH:$GO_PATH:$JAVA_HOME:$NVIM_PATH:$FD_PATH
 eval "$(zoxide init --cmd cd bash)"
 
 set -o vi
+
+
+# Load Angular CLI autocompletion.
+source <(ng completion script)
